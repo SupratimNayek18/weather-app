@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      "https://api.openweathermap.org/data/2.5/find?q=kolkata&units=metric&appid=907c99e1a96b5d38487d8d9c19b413fc"
+      "https://api.openweathermap.org/data/2.5/find?q=kolkata&units=metric&appid={Your OpenWeatherMap Token}"
     )
       .then((doc) => {
         return doc.json();
